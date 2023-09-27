@@ -1,0 +1,265 @@
+* {
+    margin :0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Navbar CSS */
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+}
+
+nav {
+    width: 73%;
+    padding: 1%;
+}
+
+nav a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+
+
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+/* Center the images in the logo div */
+.logo img {
+    text-align: center;
+}
+
+/* Hero Image CSS */
+.heroImg {
+    margin-top: 200px;
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+
+
+/*----------------- */
+
+/* --------------  My UX Skills --------------- */
+.mySkills {
+    margin: 20px;
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line on smaller screens */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+.flexChild {
+    width: 33%; /* Each skill takes up 33% of the container */
+    margin: 10px; /* Add margin for spacing between skills */
+    padding: 20px; /* Add padding for styling */
+    background-color: #f4f4f4; /* Example background color */
+    text-align: center; /* Center content horizontally */
+}
+
+.flexChild img {
+    max-width: 100px; /* Adjust image size as needed */
+    margin-bottom: 10px; /* Spacing between image and text */
+}
+
+.flexChild h3 {
+    font-size: 18px; /* Adjust font size */
+    margin-bottom: 10px; /* Spacing between heading and paragraph */
+}
+
+.flexChild p {
+    font-size: 14px; 
+}
+
+
+
+
+
+/*----------------------*/
+
+
+
+
+
+/* -------------------- My Work ----------- */
+.myWork {
+    margin: 20px;
+    padding: 40px 0; /* Adjust padding as needed */
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Spacing between grid items */
+}
+
+.workGrid > div {
+    padding: 20px;
+    background-color: #f4f4f4; /* Example background color */
+}
+
+/* Define named grid areas */
+.workGrid > div:nth-child(1) {
+    grid-area: project1;
+}
+
+.workGrid > div:nth-child(2) {
+    grid-area: project2;
+}
+
+/* Add styles to individual grid items */
+.workGrid > div img {
+    max-width: 100%; /* Adjust image size as needed */
+    margin-bottom: 10px; /* Spacing between image and text */
+}
+
+.workGrid > div h4 {
+    font-size: 18px; /* Adjust font size */
+    margin-bottom: 10px; /* Spacing between heading and paragraph */
+}
+
+.workGrid > div p {
+    font-size: 14px; /* Adjust font size */
+}
+
+
+
+
+/*---------------*/
+
+
+
+
+/* Footer CSS */
+footer {
+    background-color: #373738;
+    padding: 20px; /* Adjust as needed */
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+}
+
+footer li {
+    padding: 10px; /* Adjust as needed */
+}
+
+
+footer a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+
+
+}
+
+
+/*-------  Button --------*/
+
+/* Base Button Styles */
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover Effect */
+.button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+    color: #fff; /* Button text color on hover */
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #060606; /* Button background color */
+    color: #fff; /* Button text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+
+
+/*---------------  media query for 600px ---------*/
+
+
+
+/* Mobile Media Query */
+@media screen and (max-width: 600px) {
+    
+
+    /* For Flexbox Layout (My UX Skills Section) */
+    .flexContainer {
+        flex-direction: column; /* Change to a column layout on mobile */
+    }
+
+    .flexChild {
+        width: 100%; /* Make each skill take up 100% of the container on mobile */
+    }
+
+    /* For CSS Grid Layout (My Work Section) */
+    .workGrid {
+        grid-template-areas:
+            "project1"
+            "project2"; /* Adjust grid-template-areas for mobile */
+        grid-template-rows: auto; /* Set rows to auto for dynamic sizing */
+        grid-template-columns: 1fr; /* Use a single column for mobile */
+    }
+
+
+}
+
